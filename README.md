@@ -5,7 +5,7 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version: I think this is version number 6 of rails but I am not entirely sure about the ruby version.
 
 * System dependencies
 
