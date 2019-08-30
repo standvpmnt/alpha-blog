@@ -27,4 +27,38 @@
 	color: #fff;
 	text-decoration: none;
 }
-	
+
+.center {
+	text-align: center;
+}
+
+.jumbotron {
+	background-image: asset-url('pathology-1.png');
+	background-size: cover;
+	background-height: 500px;
+}
+
+.footer {
+	margin-top: 35px;
+	padding-top: 5px;
+	border-top: 1px solid #eaeaea;
+	color: #777;
+}
+
+footer a:hover {
+	color: #222;
+}
+
+footer small {
+	float: left;
+}
+
+footer ul {
+	float: right;
+	list-style:none;
+}
+
+float ul li {
+	float: left;
+	margin-left: 15px;
+}
