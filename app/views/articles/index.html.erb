@@ -1,5 +1,14 @@
 <h1 align="center">Your article entries are listed below</h1>
 
-<%= render 'article', obj: @articles %>
+<div align="center">
+	<div class="pagination justify-content-center">
+		<%= will_paginate @articles %>
+	</div>
+</div>
 
-<%= link_to "To visit the homepage", root_path %>
+<%= render 'article', obj: @articles %>
+<div align="center">
+	<div class="pagination justify-content-center">
+		<%= will_paginate %>
+	</div>
+</div>
