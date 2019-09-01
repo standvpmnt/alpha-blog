@@ -10,7 +10,9 @@ class ArticlesController < ApplicationController
 	end
 
 	def create
+		#debugger ---- use ctrl+P to go to end of the debugging file
 		@article = Article.new(article_params)
+		@article.user = User.first
 		#@article.save
 		if @article.save
 			flash[:success] = "Article was successfully created"
