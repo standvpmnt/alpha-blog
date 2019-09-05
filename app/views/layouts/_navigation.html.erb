@@ -25,12 +25,17 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        <% if logged_in? %>
+          <a> <%= link_to "Logout", logout_path, method: :delete, class: "nav-link" %></a>
+        <% else %>
+          <a><%= link_to "Log in", login_path, class: "nav-link" %></a>
+          <li><a><%= link_to "Sign up", signup_path, class: "nav-link" %></a></li>
+        <% end %> 
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      <button class="btn btn-outline-success bg-light my-2 my-sm-0" type="submit">Search</button>
     </form>
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
