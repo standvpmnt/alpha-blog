@@ -15,6 +15,7 @@ gem 'bootstrap', '~> 4.3.1'
 gem 'will_paginate-bootstrap'
 gem 'bootstrap-will_paginate'
 gem 'will_paginate-bootstrap4'
+gem 'rails-controller-testing'
 gem 'sass-rails', '~> 5'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '~> 4.0'
