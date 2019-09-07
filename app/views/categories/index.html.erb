@@ -7,6 +7,7 @@
 				<li class="card-title center">
 					<%= link_to "#{category.name}", category_path(category) %>
 				</li>
+				<li class="center"><small><%= pluralize(category.articles.count, "article") %> </small></li>
 			</div>
 		</div>
 	</ul>
